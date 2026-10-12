@@ -3,11 +3,11 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { myShopQuery } from "../shops";
 
-const STATUS: Record<string, { label: string; note: string }> = {
+const STATUS = {
   pending: { label: "Under review", note: "We're checking your details. You'll be able to add products once your shop is approved." },
   approved: { label: "Approved", note: "Your shop is live. Products, orders and earnings are coming next." },
   rejected: { label: "Needs changes", note: "Please review your details and resubmit." },
-};
+} as const satisfies Record<string, { label: string; note: string }>;
 
 export function SellHome() {
   const { data: shop } = useSuspenseQuery(myShopQuery);
@@ -22,7 +22,7 @@ export function SellHome() {
     );
   }
 
-  const s = STATUS[shop.status] ?? STATUS.pending;
+  const s = STATUS[shop.status as keyof typeof STATUS] ?? STATUS.pending;
   return (
     <div className="mt-6 space-y-4">
       <div className="rounded-2xl border border-border p-6">
