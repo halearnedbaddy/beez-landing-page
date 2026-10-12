@@ -135,11 +135,11 @@ export function OnboardingWizard({ existing }: { existing: Shop | null }) {
             <h1 className="text-2xl font-bold">How you sell</h1>
             <label className="flex items-center justify-between gap-4 rounded-xl border border-border p-4">
               <span><b className="block text-sm">Accept M-Pesa</b><span className="text-xs text-muted-foreground">Customers pay before you hand over the order.</span></span>
-              <Switch checked={f.accepts_mpesa} onCheckedChange={(v) => set("accepts_mpesa", v)} />
+              <Switch checked={f.accepts_mpesa ?? true} onCheckedChange={(v) => set("accepts_mpesa", v)} />
             </label>
             <label className="flex items-center justify-between gap-4 rounded-xl border border-border p-4">
               <span><b className="block text-sm">Offer delivery</b><span className="text-xs text-muted-foreground">Approved Beez riders pick up from your shop.</span></span>
-              <Switch checked={f.offers_delivery} onCheckedChange={(v) => set("offers_delivery", v)} />
+              <Switch checked={f.offers_delivery ?? true} onCheckedChange={(v) => set("offers_delivery", v)} />
             </label>
           </>
         )}
