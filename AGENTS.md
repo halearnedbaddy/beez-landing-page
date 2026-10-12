@@ -11,3 +11,4 @@
 
 - Compose the Features page from the feature tabs, TrustSection, and BuiltOnSection as sibling sections; redirect retired hash addresses to Features so existing links still work.
 - Load Google Maps once through a browser-only async callback loader; keep expansion overlays as illustrative targets, not live business activity, because no activity feed is connected.
+- Keep footer destinations in one navigation group, location as plain text, and only actionable contact/app links; omit unavailable legal and social destinations to avoid dead links.

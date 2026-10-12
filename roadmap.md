@@ -1,3 +1,4 @@
-- [ ] Replace Vision stage icons with matching photographic images.
-- [ ] Replace the illustrated global expansion map with interactive Google Maps, preserving planned expansion labels.
-- [ ] Verify photos and non-Maps page behavior; document live map verification limitation.
+- [x] Replace Vision stage icons with matching photographic images.
+- [x] Replace the illustrated global expansion map with interactive Google Maps, preserving planned expansion labels.
+- [x] Restore preview compilation by including the installed Google Maps type declarations.
+- [x] Simplify and restyle the footer, correct destinations, and verify navigation and layout.
