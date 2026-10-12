@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import Navigation from "@/components/beez/Navigation";
-import HeroSection from "@/components/beez/HeroSection";
-import OfferSection from "@/components/beez/OfferSection";
-import ProblemSection from "@/components/beez/ProblemSection";
-import VisionSection from "@/components/beez/VisionSection";
-import FeaturesSection from "@/components/beez/FeaturesSection";
-import FAQSection from "@/components/beez/FAQSection";
-import FinalCallToAction from "@/components/beez/FinalCallToAction";
-import SiteFooter from "@/components/beez/SiteFooter";
+import Navigation from "@/marketing/Navigation";
+import HeroSection from "@/marketing/HeroSection";
+import OfferSection from "@/marketing/OfferSection";
+import ProblemSection from "@/marketing/ProblemSection";
+import VisionSection from "@/marketing/VisionSection";
+import FeaturesSection from "@/marketing/FeaturesSection";
+import FAQSection from "@/marketing/FAQSection";
+import FinalCallToAction from "@/marketing/FinalCallToAction";
+import SiteFooter from "@/marketing/SiteFooter";
 
 const TITLE = "Beez: The financial system never saw them. Beez does.";
 const DESC = "Beez gives small businesses smart tools for real growth.";
