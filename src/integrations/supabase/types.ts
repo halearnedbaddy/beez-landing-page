@@ -14,7 +14,60 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      shops: {
+        Row: {
+          accepts_mpesa: boolean
+          category: string
+          created_at: string
+          description: string | null
+          id: string
+          landmark: string | null
+          language: string
+          offers_delivery: boolean
+          owner_id: string
+          owner_name: string
+          phone: string
+          shop_name: string
+          status: string
+          updated_at: string
+          zone: string
+        }
+        Insert: {
+          accepts_mpesa?: boolean
+          category: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          landmark?: string | null
+          language?: string
+          offers_delivery?: boolean
+          owner_id: string
+          owner_name: string
+          phone: string
+          shop_name: string
+          status?: string
+          updated_at?: string
+          zone: string
+        }
+        Update: {
+          accepts_mpesa?: boolean
+          category?: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          landmark?: string | null
+          language?: string
+          offers_delivery?: boolean
+          owner_id?: string
+          owner_name?: string
+          phone?: string
+          shop_name?: string
+          status?: string
+          updated_at?: string
+          zone?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
