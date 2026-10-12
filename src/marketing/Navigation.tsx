@@ -15,6 +15,7 @@ export default function Navigation() {
         <a href="#/vision" onClick={() => setMenuOpen(false)}>Vision</a>
         <a href="#/features" onClick={() => setMenuOpen(false)}>Features</a>
         <a href="#/faq" onClick={() => setMenuOpen(false)}>FAQ</a>
+        <a href="/sell" onClick={() => setMenuOpen(false)}>Sell on Beez</a>
         <a className="nav-cta" href={APP_URL} rel="noopener noreferrer">
           Launch app
         </a>
